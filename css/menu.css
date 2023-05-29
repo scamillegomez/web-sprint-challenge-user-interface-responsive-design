@@ -96,6 +96,33 @@ header {
     background-repeat: no-repeat;
 }
 
+.header-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 4, 17, .8);
+}
+
+.header-bar a{
+    color: white;
+}
+
+.header-bar nav{
+    width: 100%;
+    display: flex;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.header-bar nav a{
+    color:white;
+    width: 25%;
+    text-align: center;
+}
 /* spacer */
 .spacer {
     width: 100%;
@@ -114,39 +141,305 @@ header {
     width: 100%;
     height: auto;
     background-image: url('../img/staff-bartender.jpg');
-    background-color: rgb(0, 4, 17);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: white;
+    background-color: rgb(0, 4, 17,.8);
 }
 
-/* footer section */
+.menu h2{
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.menu .menu-bg {
+    background-color: rgb(0, 4, 17,.8);
+}
+
+.menu .menu-bg h4{
+    font-size: 4.2rem;
+}
+
+.menu .menu-bg h5{
+    font-size: 3.1rem;
+}
+
+.menu .menu-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu .menu-container .menu-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+
+.menu .menu-container .menu-section h4{
+    width: 56%;
+    text-align: left;
+    margin-bottom: 2%;
+}
+
+.menu .menu-container .menu-section .menu-item h4{
+    font-size: 2.5rem;
+}
+
+.menu .menu-container .menu-section .menu-item {
+    width: 56%;
+    margin-bottom: 4%;
+}
+
+.menu .menu-container .menu-section .menu-item-header {
+    width: 100%;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.menu .menu-container .menu-section .menu-item-header h4{
+    width: auto;
+}
+
+.menu .menu-container .menu-section .menu-item-desc p{
+    font-size: 1.8rem; 
+    /* width: 80%; */
+}
+
 footer {
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
     height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    background-color: rgb(0, 4, 17);
+    color: white;
 }
 
+footer .email {
+    text-align: center;
+}
+
+footer .right{
+    width: 65%;
+    text-align: right;
+}
+
+footer .right p{
+    font-size: 1.5rem;
+    margin-top: 4%;
+    padding-right: 10%;
+}
+
+footer .right nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+footer .right nav a{
+    color:white;
+    font-size: 2.2rem;
+}
 /* mobile media query */
 @media (max-width: 428px) {
-    /* header section */
-    .header-title {
-        width: 75%;
-        margin: 0 auto;
+       /* header section */
+       header {
+        width: 100%;
+        height: 100vh;
+        background-image: url('../img/home-header.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .header-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 4, 17, .8);
+    }
+    
+    .header-bar a h1{
         text-align: center;
-        font-size: 4rem;
+        font-size: 6rem;
+        width: 98%;
     }
 
+    .header-bar a{
+        color: white;
+    }
+    
+    .header-bar nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 95%;
+    }
+
+    .header-bar .social{
+        display: flex;
+        width: 30%;
+    }
+    
+    .header-bar nav a{
+        color:white;
+        width: 50%;
+        text-align: center;
+    }
     /* menu */
     .menu {
         background-image: none;
     }
 
+    .spacer-sm {
+        width: 100%;
+        height: 3vh;
+        background-color: rgb(0, 4, 17);
+    }
+
+    .spacer{
+        height: 3vh;
+    }
+    
+    .menu h2{
+    text-align: center;
+    margin-bottom: 4%;
+    font-size: 3.9rem;
+    }
+
+    .menu .menu-bg {
+    background-color: rgb(0, 4, 17,.8);
+    }
+
+    .menu .menu-bg h4{
+    font-size: 2.5rem;
+    }
+
+    .menu .menu-bg h5{
+    font-size: 1.rem;
+    }
+
+    .menu .menu-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    }
+
+    .menu .menu-container .menu-section {
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 9%;
+    }
+
+
+    .menu .menu-container .menu-section h4{
+    width: 80%;
+    text-align: left;
+    margin-bottom: 2%;
+    }
+
+    .menu .menu-container .menu-section .menu-item h4{
+    font-size: 2.1rem;
+    }
+
+    .menu .menu-container .menu-section .menu-item {
+    width: 80%;
+    margin-bottom: 12%;
+    }
+
+    .menu .menu-container .menu-section .menu-item-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    }
+
+    .menu .menu-container .menu-section .menu-item-header h4{
+    font-size: 1.9rem;
+    width: auto;
+    }
+
+    .menu .menu-container .menu-section .menu-item-desc p{
+    font-size: 1.25rem; 
+    /* width: 80%; */
+    }   
+
+
+
     /* footer section */
     footer {
-        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 30vh;
         padding-top: 2.5vh;
-        font-size: 2rem;
+        font-size: 3rem;
+        background-color: rgb(0, 4, 17);
+        color: white;
+    }
+    
+    footer .email {
+        text-align: center;
+        width: 40%;
+    }
+
+    footer label {
+        font-size: 1.9rem;
+        margin-bottom: 1%;
+    }
+
+    footer .email .input {
+        width: 80%;
+        margin-right: 0;
+    }
+    
+    footer .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        text-align: right;
+    }
+    
+    footer .right p{
+        font-size: 1rem;
+        margin-top: 4%;
+        padding-right: 10%;
+        width: 80%;
+        text-align: center;
+    }
+    
+    footer .right nav{
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+        text-align: center;
+    }
+    
+    footer .right nav a{
+        color:white;
+        font-size: 1.8rem;
+        text-align: center;
     }
 }
